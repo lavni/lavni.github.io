@@ -99,10 +99,29 @@ footer span{
 }
 .shake, .shake a img{
     animation-name: shake;
-    animation-duration: 1s;
+    animation-duration: .8s;
     -moz-animation-name: shake;
-    -moz-animation-duration: 1s;
+    -moz-animation-duration: .8s;
     -webkit-animation-name: shake;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: .8s;
 /*    animation-delay: .5s;
 */}
+@media (max-width: 960px){
+    .shake, .shake a img{
+        animation-name: none;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx){
+
+  header, .icons{
+      height: 1354px;
+  }
+
+}
