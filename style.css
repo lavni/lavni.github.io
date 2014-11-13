@@ -14,7 +14,7 @@ body{
 header{
     position: relative;
     width:100%;
-    height:677px;
+    min-height:677px;
     text-align: center;
     background: url('images/photo2.jpg') no-repeat 50% 50%;
     background-size: cover;
@@ -48,8 +48,7 @@ button{
     position: relative;
     min-height: 677px;
     text-align: center;
-    padding: 5%;
-    padding-bottom: 25px;
+    padding: 10% 5% 25px 5%;
 }
 .social{
     display: inline-block;
@@ -112,3 +111,16 @@ footer span{
     }
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx){
+
+  .social{
+      margin: 3.5%;
+  }
+
+}
