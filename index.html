@@ -64,9 +64,10 @@
         <script>
             $(document).ready(function(){
                 //button
+                var hh=$(window).height();
                 $("button").click(function(){
                     var height=$("body").height();
-                    $("html, body").animate({"scrollTop":height}, 1500);
+                    $("html, body").animate({"scrollTop":hh}, 1500);
                 });
                 //icon
                 $(".social").hover(
@@ -77,8 +78,8 @@
                     $(this).removeClass("shake");
                   }
                 );
-                var hh=$(window).height();
-                $('header, icons').css('height', hh);
+
+                $("header, icons").css("height", hh);
 
             });
 
